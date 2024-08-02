@@ -49,10 +49,12 @@ public class Wrappers {
 
     }
 
+    //Get Table Rows
     public List<WebElement> getTableRowByClassName(String className){
         return wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//tr[@class='"+className+"']")));
     }
 
+    //Get Columns in the table
     public String getColumnTextByClassName(WebElement row, String className){
         return row.findElement(By.className(className)).getText();
     }

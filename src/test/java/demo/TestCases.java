@@ -67,7 +67,7 @@ public class TestCases {
 
     }
 
-
+    // Create json for best hockey team
     @Test
     public void testCase01() {
         wrappers.openWebPage();
@@ -98,6 +98,8 @@ public class TestCases {
         wrappers.writeToFile("hockey-team-data.json", allScores);
     }
 
+
+    // Create json for oscar winning flims
     @Test
     public void testCase02() {
         wrappers.openWebPage();
@@ -132,14 +134,14 @@ public class TestCases {
                 out.add(flim);
 
 
-//                System.out.println("===========================================================");
-//
-//                System.out.println(wrappers.getColumnTextByClassName(row, "film-title"));
-//                System.out.println(wrappers.getColumnTextByClassName(row, "film-nominations"));
-//                System.out.println(wrappers.getColumnTextByClassName(row, "film-awards"));
-//                System.out.println(wrappers.getColumnTextByClassName(row, "film-best-picture"));
-//
-//                System.out.println("===========================================================");
+                System.out.println("===========================================================");
+
+                System.out.println(wrappers.getColumnTextByClassName(row, "film-title"));
+                System.out.println(wrappers.getColumnTextByClassName(row, "film-nominations"));
+                System.out.println(wrappers.getColumnTextByClassName(row, "film-awards"));
+                System.out.println(wrappers.getColumnTextByClassName(row, "film-best-picture"));
+
+                System.out.println("===========================================================");
 
             }
 
